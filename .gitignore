@@ -1,53 +1,41 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-lerna-debug.log*
+# See http://help.github.com/ignore-files/ for more about ignoring files.
 
-coverage
+# compiled output
+/dist
+/tmp
+/out-tsc
 
-node_modules/
+# dependencies
+/node_modules
 
-*.tsbuildinfo
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
 
-.npm
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 
-.eslintcache
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
 
-.yarn-integrity
+# System Files
+.DS_Store
+Thumbs.db
 
-.env.test
-.env.prod
-
-/dev.ts
-
-.cache
-
-dist
-
-db-prod.sqlite
-db.sqlite
-
-.cache/
-
-.vuepress/dist
-
-.serverless/
-
-/server/**/*.js
-/server/**/*.d.ts
-/server/**/*.d.ts.map
-
-/client-dist
-/server-dist
-/api-dist
-
-/server/codegen-generated
-/server/genql-generated
-.vercel
-
-/server/prisma/client/
-/server/prisma/prisma.sqlite
-/docs
+/**/*.sqlite

@@ -1,6 +1,6 @@
 {
   "include": ["./api/**/*"],
-  "extends": "./tsconfig.json",
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "declaration": false,
     "declarationMap": false,

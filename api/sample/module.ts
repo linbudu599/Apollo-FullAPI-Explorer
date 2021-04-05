@@ -4,7 +4,7 @@ import {
   Int,
   registerEnumType,
   createUnionType,
-} from "type-graphql";
+} from 'type-graphql';
 
 export enum Difficulty {
   Beginner,
@@ -21,13 +21,13 @@ export enum CompanyScale {
 }
 
 registerEnumType(Difficulty, {
-  name: "Difficulty",
-  description: "All possible preparation difficulty levels",
+  name: 'Difficulty',
+  description: 'All possible preparation difficulty levels',
 });
 
 registerEnumType(CompanyScale, {
-  name: "CompanyScale",
-  description: "Company Scale",
+  name: 'CompanyScale',
+  description: 'Company Scale',
 });
 
 @ObjectType()
@@ -87,13 +87,13 @@ export class Recipe {
   cook!: Cook;
 }
 
-@ObjectType({ description: "useless object type in union type:)" })
+@ObjectType({ description: 'useless object type in union type:)' })
 export class SaltFish {
   @Field((type) => Int)
   EngelCoefficient!: number;
 }
 
 export const RecipeUnionResult = createUnionType({
-  name: "RecipeUnionResult",
+  name: 'RecipeUnionResult',
   types: () => [Recipe, Cook, SaltFish] as const,
 });

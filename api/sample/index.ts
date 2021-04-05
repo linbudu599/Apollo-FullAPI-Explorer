@@ -1,9 +1,9 @@
-import "reflect-metadata";
-import { buildSchemaSync } from "type-graphql";
-import * as TypeORM from "typeorm";
-import { ApolloServer as ApolloVercelServer } from "@saeris/apollo-server-vercel";
+import 'reflect-metadata';
+import { buildSchemaSync } from 'type-graphql';
+import * as TypeORM from 'typeorm';
+import { ApolloServer as ApolloVercelServer } from '@saeris/apollo-server-vercel';
 
-import RecipeResolver from "./resolver";
+import RecipeResolver from './resolver';
 
 const schema = buildSchemaSync({
   resolvers: [RecipeResolver],

@@ -1,4 +1,4 @@
-import { createConnection, Connection } from "typeorm";
+import { createConnection, Connection } from 'typeorm';
 
 export const connector = async (
   connection: Connection,
@@ -9,15 +9,15 @@ export const connector = async (
   }
 
   const reConnection = await createConnection({
-    type: "mysql",
-    name: "default",
+    type: 'mysql',
+    name: 'default',
     host: process.env.DB_HOST,
     port: Number(process.env.DB_PORT),
-    username: "root",
+    username: 'root',
     password: process.env.DB_PWD,
     database: process.env.DB_TABLE,
-    logging: "all",
-    logger: "advanced-console",
+    logging: 'all',
+    logger: 'advanced-console',
     entities: eneity,
   });
 

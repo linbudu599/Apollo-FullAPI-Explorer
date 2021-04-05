@@ -1,11 +1,11 @@
 // @ts-nocheck
-import { Resolver, Query } from "type-graphql";
-import { Connection } from "typeorm";
+import { Resolver, Query } from 'type-graphql';
+import { Connection } from 'typeorm';
 
-import SubstanceEntity from "./entity";
-import Substance from "./module";
+import SubstanceEntity from './entity';
+import Substance from './module';
 
-import { connector } from "./util";
+import { connector } from './util';
 
 @Resolver((of) => Substance)
 export default class SubstanceResolver {

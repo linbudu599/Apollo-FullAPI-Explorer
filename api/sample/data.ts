@@ -1,4 +1,4 @@
-import { plainToClass } from "class-transformer";
+import { plainToClass } from 'class-transformer';
 
 import {
   Difficulty,
@@ -8,7 +8,7 @@ import {
   Company,
   SaltFish,
   WorkExperience,
-} from "./module";
+} from './module';
 
 const createWorkExperience = (
   workExp: Partial<WorkExperience>
@@ -37,16 +37,16 @@ export const sampleSaltFishes = [
 
 export const sampleCompanies = [
   createCompany({
-    name: "XX有限公司",
+    name: 'XX有限公司',
     scale: CompanyScale.Small,
     registerDate: new Date(),
-    description: "小公司罢了",
+    description: '小公司罢了',
   }),
   createCompany({
-    name: "不渡科技有限公司",
+    name: '不渡科技有限公司',
     scale: CompanyScale.Huge,
     registerDate: new Date(),
-    description: "我直接世界500强",
+    description: '我直接世界500强',
   }),
 ];
 
@@ -65,12 +65,12 @@ export const sampleWorkExperience = [
 
 export const sampleCooks = [
   createCook({
-    name: "Gordon Ramsay",
+    name: 'Gordon Ramsay',
     yearsOfExperience: 21,
     experience: sampleWorkExperience[0],
   }),
   createCook({
-    name: "Kim Kardashian",
+    name: 'Kim Kardashian',
     yearsOfExperience: 1,
     experience: sampleWorkExperience[1],
   }),
@@ -78,38 +78,38 @@ export const sampleCooks = [
 
 export const sampleRecipes = [
   createRecipe({
-    title: "Recipe 1",
-    description: "Desc 1",
+    title: 'Recipe 1',
+    description: 'Desc 1',
     preparationDifficulty: Difficulty.Easy,
-    ingredients: ["one", "two", "three"],
+    ingredients: ['one', 'two', 'three'],
     cook: sampleCooks[1],
   }),
   createRecipe({
-    title: "Recipe 2",
-    description: "Desc 2",
+    title: 'Recipe 2',
+    description: 'Desc 2',
     preparationDifficulty: Difficulty.Easy,
-    ingredients: ["four", "five", "six"],
+    ingredients: ['four', 'five', 'six'],
     cook: sampleCooks[0],
   }),
   createRecipe({
-    title: "Recipe 3",
-    description: "Desc 3",
+    title: 'Recipe 3',
+    description: 'Desc 3',
     preparationDifficulty: Difficulty.Beginner,
-    ingredients: ["seven", "eight", "nine"],
+    ingredients: ['seven', 'eight', 'nine'],
     cook: sampleCooks[1],
   }),
   createRecipe({
-    title: "Recipe 4",
-    description: "Desc 4",
+    title: 'Recipe 4',
+    description: 'Desc 4',
     preparationDifficulty: Difficulty.MasterChef,
-    ingredients: ["ten", "eleven", "twelve"],
+    ingredients: ['ten', 'eleven', 'twelve'],
     cook: sampleCooks[0],
   }),
   createRecipe({
-    title: "Recipe 5",
-    description: "Desc 5",
+    title: 'Recipe 5',
+    description: 'Desc 5',
     preparationDifficulty: Difficulty.Hard,
-    ingredients: ["thirteen", "fourteen", "fifteen"],
+    ingredients: ['thirteen', 'fourteen', 'fifteen'],
     cook: sampleCooks[0],
   }),
 ];

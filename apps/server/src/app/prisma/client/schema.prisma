@@ -1,0 +1,35 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+datasource db {
+  provider = "sqlite"
+  url      = env("PRISMA_DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "./client"
+}
+
+model User {
+  id       Int     @id @default(autoincrement())
+  name     String
+  nickName String?
+  items    Item[]
+}
+
+model Item {
+  id      Int     @id @default(autoincrement())
+  title   String  @unique
+  content String?
+
+  // SQLite不支持枚举
+  // type     String  @default("FEATURE")
+
+  ownerId Int?
+  owner   User? @relation(fields: [ownerId], references: [id])
+
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

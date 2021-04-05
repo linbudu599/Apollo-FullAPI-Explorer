@@ -5,8 +5,8 @@ comment: true
   require_base: yes        # [yes :: must have a base report to post]
   require_head: yes       # [yes :: must have a head report to post]
   branches:               # branch names that can post comment
-    - "master"
-    - "main"
+    -"master"
+    -"main"
 
 coverage:
   parsers:

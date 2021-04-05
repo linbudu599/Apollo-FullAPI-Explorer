@@ -1,7 +1,7 @@
-import { Resolver, Query, Arg } from "type-graphql";
+import { Resolver, Query, Arg } from 'type-graphql';
 
-import { RecipeUnionResult, Cook, Recipe, SaltFish } from "./module";
-import { sampleCooks, sampleRecipes, sampleSaltFishes } from "./data";
+import { RecipeUnionResult, Cook, Recipe, SaltFish } from './module';
+import { sampleCooks, sampleRecipes, sampleSaltFishes } from './data';
 
 @Resolver()
 export default class RecipeResolver {

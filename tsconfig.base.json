@@ -1,0 +1,23 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2018",
+    "module": "commonjs",
+    "lib": ["es2017", "dom", "ESNext.asynciterable", "ES2018", "ESNext.String"],
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "isolatedModules": true,
+    "paths": {}
+  },
+  "exclude": ["node_modules"]
+}
